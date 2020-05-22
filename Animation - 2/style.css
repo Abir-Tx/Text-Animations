@@ -23,32 +23,41 @@ body
     text-transform: uppercase;
     font-size: 05px;
     font-weight: 800;
-    letter-spacing: 5px;
-    animation: pop 3s 2;
-    transition: 2s ease-in-out;
+    letter-spacing: 20px;
+}
+.text:hover{
+    animation: pop 4s 1;
 }
 
 @keyframes pop
 {
     0%
     {
-        color: black
+        color: white;
+        font-size: 6px;
     }
     20%
     {
         color: white;
+        font-size: 8px;
     }
     40%
     {
         font-size: 10px;
+        letter-spacing: 8px;
     }
     60%
     {
         font-size: 20px;
+        transition: 0.2s all ease;
+        letter-spacing: 50px;
     }
     80%
     {
         font-size: 50px;
     }
-
+    100%
+    {
+        font-size: 60px;
+    }
 }
