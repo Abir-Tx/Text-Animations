@@ -30,7 +30,7 @@ body{
     position: relative;
     animation: text 3s 1;
     text-transform: uppercase;
-    
+    text-shadow: 4px 3px 4px blue;
 }
 /* span
 {
@@ -49,6 +49,7 @@ body{
     font-size: 30px;
     color: red;
     text-transform: capitalize;
+    text-shadow: 4px 3px 4px blue;
 
 }
 @keyframes text{
@@ -59,6 +60,7 @@ body{
     30%{
         letter-spacing: 25px;
         margin-bottom: -40px;
+        text-shadow: 4px 3px 4px red;
     }
     80%{
         letter-spacing: 8px;
