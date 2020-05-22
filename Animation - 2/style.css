@@ -24,6 +24,8 @@ body
     font-size: 05px;
     font-weight: 800;
     letter-spacing: 20px;
+    user-select: none;
+    -webkit-user-select: none;
 }
 .text:hover{
     animation: pop 4s 1;
