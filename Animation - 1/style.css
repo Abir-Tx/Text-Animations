@@ -30,7 +30,20 @@ body{
     position: relative;
     animation: text 3s 1;
     text-transform: uppercase;
+    
 }
+/* span
+{
+    animation: color 2s infinite;
+}
+@keyframes color{
+    0%{
+        color: white;
+    }
+    50%{
+        color: blue;
+    }
+} */
 .text2
 {
     font-size: 30px;
@@ -50,5 +63,7 @@ body{
     80%{
         letter-spacing: 8px;
         margin-bottom: -40px;
+        color: red;
+        transition: 0.1s ease-in-out;
     }
 }
