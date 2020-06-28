@@ -1,0 +1,51 @@
+*
+{
+    padding: 0%;
+    margin: 0;
+}
+body
+{
+    background: black;
+}
+.container
+{
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+}
+.container2
+{
+    display: none;
+    width: 100%;
+    top: 57%;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 0.2s all ease;
+    animation: changeColor 3s infinite;
+}
+@keyframes changeColor
+{
+    25%
+    {
+        border-color: blue;
+    }
+    80%
+    {
+        border-color: chartreuse;
+    }
+}
+/* .container2:hover
+{
+    border: 1px solid blue;
+    border-radius: 50%;
+} */
+.text
+{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 15px;
+}
