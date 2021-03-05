@@ -1,0 +1,100 @@
+// SCSS for root index file
+
+
+// variables
+$anim1Color: #1abc9c;
+$anim2Color: #5499c7;
+$anim3Color: #FF5733;
+$containerInnerPadding: 15%;
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    .header{
+        text-align: center;
+        transition: 0.3s ease-in-out;
+        animation-name: headerAnim;
+        animation-duration: 3s;
+        animation-direction: normal;
+    }
+
+    .container{
+        text-align: center;
+        margin-top: 30px;
+        a{
+            color: black;
+            text-decoration: none;
+            &:hover, :active{
+                color: yellow;
+            }
+        }
+        .anim1{
+            padding: $containerInnerPadding;
+            width: auto;
+            background-color: $anim1Color;
+
+            transition: 0.3s ease-in;
+            font-size: 3vw;
+            &:hover{
+                animation-name: containerInnerAnim;
+                animation-duration: 0.3s;
+            }
+        }
+
+        .anim2{
+            padding: $containerInnerPadding;
+            width: auto;
+            background-color: $anim2Color;
+
+                        transition: 0.3s ease-in;
+            font-size: 3vw;
+            &:hover{
+                animation-name: containerInnerAnim;
+                animation-duration: 0.3s;
+            }
+        }
+
+        .anim3{
+            padding: $containerInnerPadding;
+            width: auto;
+            background-color: $anim3Color;
+
+                        transition: 0.3s ease-in;
+            font-size: 3vw;
+            &:hover{
+                animation-name: containerInnerAnim;
+                animation-duration: 0.3s;
+            }
+        }
+    }
+
+}
+
+@keyframes headerAnim{
+    from{
+        opacity: 0;
+        color: red;
+    }
+    80%{
+        color: blue;
+    }
+    to{
+        opacity: 100;
+        color: black;
+    }
+}
+
+@keyframes containerInnerAnim{
+    from{
+        font-size: 3vw;
+    }
+    to{
+        font-size: 5vw;
+    }
+}
+

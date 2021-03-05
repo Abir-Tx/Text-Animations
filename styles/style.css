@@ -1,0 +1,129 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+html {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html .header {
+  text-align: center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-animation-name: headerAnim;
+          animation-name: headerAnim;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+html .container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+html .container a {
+  color: black;
+  text-decoration: none;
+}
+
+html .container a:hover, html .container a :active {
+  color: yellow;
+}
+
+html .container .anim1 {
+  padding: 15%;
+  width: auto;
+  background-color: #1abc9c;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  font-size: 3vw;
+}
+
+html .container .anim1:hover {
+  -webkit-animation-name: containerInnerAnim;
+          animation-name: containerInnerAnim;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+html .container .anim2 {
+  padding: 15%;
+  width: auto;
+  background-color: #5499c7;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  font-size: 3vw;
+}
+
+html .container .anim2:hover {
+  -webkit-animation-name: containerInnerAnim;
+          animation-name: containerInnerAnim;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+html .container .anim3 {
+  padding: 15%;
+  width: auto;
+  background-color: #FF5733;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  font-size: 3vw;
+}
+
+html .container .anim3:hover {
+  -webkit-animation-name: containerInnerAnim;
+          animation-name: containerInnerAnim;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+@-webkit-keyframes headerAnim {
+  from {
+    opacity: 0;
+    color: red;
+  }
+  80% {
+    color: blue;
+  }
+  to {
+    opacity: 100;
+    color: black;
+  }
+}
+
+@keyframes headerAnim {
+  from {
+    opacity: 0;
+    color: red;
+  }
+  80% {
+    color: blue;
+  }
+  to {
+    opacity: 100;
+    color: black;
+  }
+}
+
+@-webkit-keyframes containerInnerAnim {
+  from {
+    font-size: 3vw;
+  }
+  to {
+    font-size: 5vw;
+  }
+}
+
+@keyframes containerInnerAnim {
+  from {
+    font-size: 3vw;
+  }
+  to {
+    font-size: 5vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
