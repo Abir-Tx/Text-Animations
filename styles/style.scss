@@ -1,100 +1,130 @@
 // SCSS for root index file
 
-
 // variables
 $anim1Color: #1abc9c;
 $anim2Color: #5499c7;
-$anim3Color: #FF5733;
+$anim3Color: #ff5733;
 $containerInnerPadding: 15%;
 
-*{
+* {
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
-html{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
-    .header{
+html {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-image: url(https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=6&m=1138395421&s=612x612&w=0&h=bJ1SRWujCgg3QWzkGPgaRiArNYohPl7-Wc4p_Fa_cyA=);
+    background-repeat: round;
+    .header {
         text-align: center;
-        transition: 0.3s ease-in-out;
+        transition: 0.2s ease-in-out;
         animation-name: headerAnim;
-        animation-duration: 3s;
-        animation-direction: normal;
+        animation-duration: 0.9s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+        text-shadow: 2px 2px 4px grey;
     }
 
-    .container{
+    .container {
         text-align: center;
         margin-top: 30px;
-        a{
+        a {
             color: black;
             text-decoration: none;
-            &:hover, :active{
+            &:hover,
+            :active {
                 color: yellow;
             }
         }
-        .anim1{
+        .anim1 {
             padding: $containerInnerPadding;
             width: auto;
             background-color: $anim1Color;
 
             transition: 0.3s ease-in;
             font-size: 3vw;
-            &:hover{
+            &:hover {
                 animation-name: containerInnerAnim;
                 animation-duration: 0.3s;
             }
         }
 
-        .anim2{
+        .anim2 {
             padding: $containerInnerPadding;
             width: auto;
             background-color: $anim2Color;
 
-                        transition: 0.3s ease-in;
+            transition: 0.3s ease-in;
             font-size: 3vw;
-            &:hover{
+            &:hover {
                 animation-name: containerInnerAnim;
                 animation-duration: 0.3s;
             }
         }
 
-        .anim3{
+        .anim3 {
             padding: $containerInnerPadding;
             width: auto;
             background-color: $anim3Color;
 
-                        transition: 0.3s ease-in;
+            transition: 0.3s ease-in;
             font-size: 3vw;
-            &:hover{
+            &:hover {
                 animation-name: containerInnerAnim;
                 animation-duration: 0.3s;
             }
         }
     }
 
+    footer {
+        background-color: grey;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        a {
+            text-decoration: solid;
+            color: white;
+            letter-spacing: 2px;
+
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            font-size: medium;
+        }
+        .gh-link {
+            #src {
+                display: block;
+            }
+
+            #download {
+                display: block;
+            }
+        }
+    }
 }
 
-@keyframes headerAnim{
-    from{
-        opacity: 0;
+@keyframes headerAnim {
+    from {
+        opacity: 50;
         color: red;
+        // transform: translateX(50px);
+        letter-spacing: 4px;
     }
-    80%{
+    60% {
+        color: darkcyan;
+    }
+    80% {
         color: blue;
     }
-    to{
+    to {
         opacity: 100;
         color: black;
     }
 }
 
-@keyframes containerInnerAnim{
-    from{
+@keyframes containerInnerAnim {
+    from {
         font-size: 3vw;
     }
-    to{
+    to {
         font-size: 5vw;
     }
 }
-

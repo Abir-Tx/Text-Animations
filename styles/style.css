@@ -1,22 +1,28 @@
 * {
   margin: 0%;
   padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-image: url(https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=6&m=1138395421&s=612x612&w=0&h=bJ1SRWujCgg3QWzkGPgaRiArNYohPl7-Wc4p_Fa_cyA=);
+  background-repeat: round;
 }
 
 html .header {
   text-align: center;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   -webkit-animation-name: headerAnim;
           animation-name: headerAnim;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
+  animation-direction: alternate-reverse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  text-shadow: 2px 2px 4px grey;
 }
 
 html .container {
@@ -29,7 +35,8 @@ html .container a {
   text-decoration: none;
 }
 
-html .container a:hover, html .container a :active {
+html .container a:hover,
+html .container a :active {
   color: yellow;
 }
 
@@ -68,7 +75,7 @@ html .container .anim2:hover {
 html .container .anim3 {
   padding: 15%;
   width: auto;
-  background-color: #FF5733;
+  background-color: #ff5733;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
   font-size: 3vw;
@@ -81,10 +88,37 @@ html .container .anim3:hover {
           animation-duration: 0.3s;
 }
 
+html footer {
+  background-color: grey;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+html footer a {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  color: white;
+  letter-spacing: 2px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: medium;
+}
+
+html footer .gh-link #src {
+  display: block;
+}
+
+html footer .gh-link #download {
+  display: block;
+}
+
 @-webkit-keyframes headerAnim {
   from {
-    opacity: 0;
+    opacity: 50;
     color: red;
+    letter-spacing: 4px;
+  }
+  60% {
+    color: darkcyan;
   }
   80% {
     color: blue;
@@ -97,8 +131,12 @@ html .container .anim3:hover {
 
 @keyframes headerAnim {
   from {
-    opacity: 0;
+    opacity: 50;
     color: red;
+    letter-spacing: 4px;
+  }
+  60% {
+    color: darkcyan;
   }
   80% {
     color: blue;
