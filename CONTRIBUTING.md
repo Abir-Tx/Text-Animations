@@ -16,10 +16,11 @@ Make sure that you are on the [**master**](https://github.com/Abir-Tx/Text-Anima
 - Try to make the animations unique.
 - You can use HTML, CSS & JS to create these animations
 - If possible add a readme.md inside your folder describing what have you done and what should we expect or how to improve more or usage etc.
+- Add your newly added animation in the main [README.md](README.md) docs **available animations** list.
 
 ## Improve github pages
 
-Make sure that you are on the [**gh-pages](https://github.com/Abir-Tx/Text-Animations/tree/gh-pages) branch of the project and then - 
+Make sure that you are on the [**gh-pages**](https://github.com/Abir-Tx/Text-Animations/tree/gh-pages) branch of the project and then - 
 
 - Here improve the index and styles file and folder. These two things are responsible for the main frontend of the hosted page.
 - The goal of the hosted page is to show the created animations in the master branch in a nice and easily accessible way.
