@@ -24,4 +24,4 @@ This project will accept any kind of PR or contributions with love. Read more on
 
 # Contributors
 
-- [Abir-Tx](www.github.com/abir-tx)
+- [Abir-Tx](https://www.github.com/abir-tx)
