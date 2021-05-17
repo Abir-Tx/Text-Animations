@@ -4,6 +4,9 @@ Repo holding some cool text effects & animations using HTML, CSS &amp; javascrip
 
 # View Live Examples
 
+![pop-out-text-mushfiqur-rohoman-abir](https://user-images.githubusercontent.com/28858998/118458965-12117280-b71d-11eb-85f3-a9f2b94a7bb2.gif "pop-out-text")
+
+
 Visit [this](https://abir-tx.github.io/Text-Animations/) to view the live site
 
 # Available Animations
